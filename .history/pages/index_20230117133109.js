@@ -62,10 +62,11 @@ export default function Home() {
           <div className={styles.text} key={index}>
             <div>{w.description}</div>
             <div>{w.main}</div>
-            <h1>{data.main.temp} &deg;C</h1>
-            <h3>Feels Like: {data.main.feels_like} &deg;C</h3>
-            <h3>Wind Gust: {data.wind.speed}m/s</h3>
-            
+            {data.main.temp} &deg;C
+            <h3>Feels Like:</h3>
+            {data.main.feels_like} &deg;C
+            <p>Wind Gust:</p>
+            {data.wind.speed}m/s
             </div>
     
     
