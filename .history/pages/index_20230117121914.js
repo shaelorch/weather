@@ -47,7 +47,7 @@ export default function Home() {
     </div>
   
     <input 
-    className={styles.input}
+   
     value={location}
     onChange={event => setLocation(event.target.value)}
     placeholder="Enter Location"

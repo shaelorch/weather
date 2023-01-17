@@ -10,20 +10,6 @@
   background-size: cover;
 }
 
-.text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  color:black;
-}
-
-.input {
-  border-radius:5px;
-  background-color: white;
-  height:30px;
-  width:75%;
-  
-}
-
 
 .description {
   display: inherit;

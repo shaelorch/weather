@@ -47,7 +47,7 @@ export default function Home() {
     </div>
   
     <input 
-    className={styles.input}
+    style={backgroundColor}
     value={location}
     onChange={event => setLocation(event.target.value)}
     placeholder="Enter Location"
@@ -65,7 +65,6 @@ export default function Home() {
             {data.main.temp} &deg;C
             <p>Feels Like:</p>
             {data.main.feels_like} &deg;C
-            {data.wind.speed}
             </div>
     
     
