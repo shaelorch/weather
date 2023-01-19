@@ -13,19 +13,10 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   color:white;
-  display:flex;
-  flex-direction:column;
-  text-align: center;
-  
 }
 
 .icon {
-  margin-left:2px;
-}
-
-.png {
-  width:50%;
-  height:50%;
+  margin-left:5px;
 }
 
 .location {

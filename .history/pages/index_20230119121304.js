@@ -52,7 +52,7 @@ export default function Home() {
         return(
     <><div className={styles.location}>
             <h2>{data.name}</h2><TiLocation className={styles.icon} size='30px' />
-          </div><img className={styles.png} src='sun.svg' /></>
+          </div><img className={styles.png} src={setImage} /></>
         )
     })
   }

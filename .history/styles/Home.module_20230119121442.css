@@ -13,10 +13,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   color:white;
-  display:flex;
-  flex-direction:column;
-  text-align: center;
-  
+  margin-bottom:200px;
+  margin-top:50px;
 }
 
 .icon {

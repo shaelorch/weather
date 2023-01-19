@@ -25,8 +25,13 @@ export default function Home() {
   const overcast = "overcast.svg";
   const rain = "rain.svg";
 
-  
+  const setImage = (event) => {
+    if(response.data.weather = "Clouds"){
+      return clouds;
+    }if(response.data.weather = "")
 
+    }
+  }
   const searchLocation = (event) => {
     if(event.key === "Enter") {
       axios.get(url)
@@ -52,7 +57,7 @@ export default function Home() {
         return(
     <><div className={styles.location}>
             <h2>{data.name}</h2><TiLocation className={styles.icon} size='30px' />
-          </div><img className={styles.png} src='sun.svg' /></>
+          </div><img className={styles.png} src="cloud.svg" /></>
         )
     })
   }

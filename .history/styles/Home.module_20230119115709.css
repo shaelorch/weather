@@ -13,10 +13,6 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   color:white;
-  display:flex;
-  flex-direction:column;
-  text-align: center;
-  
 }
 
 .icon {
@@ -24,8 +20,8 @@
 }
 
 .png {
-  width:50%;
-  height:50%;
+  width:90%;
+  height:90%;
 }
 
 .location {

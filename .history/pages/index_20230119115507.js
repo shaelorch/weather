@@ -15,17 +15,12 @@ export default function Home() {
   const [data, setData] = useState({});
   const [weather, setWeather] = useState();
   const [errorMessage, setErrorMessage] = useState("");
+  const [icon, setIcon] = useState();
 
   var apiKey = "5bb65e5dcdd88d96c09dd61a44557240";
   var lang = "fr";
   var units = "metric";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&appid=${apiKey}&lang=${lang}`
-  const clouds = "cloud.svg";
-  const sun = "sun.svg";
-  const overcast = "overcast.svg";
-  const rain = "rain.svg";
-
-  
 
   const searchLocation = (event) => {
     if(event.key === "Enter") {
@@ -50,9 +45,10 @@ export default function Home() {
     {
       weather && weather.map((w, index)=> {
         return(
-    <><div className={styles.location}>
-            <h2>{data.name}</h2><TiLocation className={styles.icon} size='30px' />
-          </div><img className={styles.png} src='sun.svg' /></>
+    <div className={styles.location}>
+      <h2>{data.name}</h2><TiLocation className={styles.icon} size='30px'/>
+    </div>
+    <img src="cloudy.png"/>
         )
     })
   }

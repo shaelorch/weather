@@ -4,7 +4,6 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios'
 import { useState } from 'react';
-import {TiLocation} from 'react-icons/ti';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,12 +19,6 @@ export default function Home() {
   var lang = "fr";
   var units = "metric";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&appid=${apiKey}&lang=${lang}`
-  const clouds = "cloud.svg";
-  const sun = "sun.svg";
-  const overcast = "overcast.svg";
-  const rain = "rain.svg";
-
-  
 
   const searchLocation = (event) => {
     if(event.key === "Enter") {
@@ -47,15 +40,11 @@ export default function Home() {
 
   return <main className={styles.main}>
     
-    {
-      weather && weather.map((w, index)=> {
-        return(
-    <><div className={styles.location}>
-            <h2>{data.name}</h2><TiLocation className={styles.icon} size='30px' />
-          </div><img className={styles.png} src='sun.svg' /></>
-        )
-    })
-  }
+    
+    <div className={styles.text}>
+      
+      <h2>{data.name}</h2>
+    </div>
   
     <input 
     className={styles.input}
